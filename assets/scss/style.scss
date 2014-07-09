@@ -1,4 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+@mixin sans_regular {
+	font-family: "Open Sans",arial,sans-serif;
+	font-weight: 400;
+}
+
+@mixin sans_light {
+	font-family: "Open Sans",arial,sans-serif;
+	font-weight: 300;
+}
 
 @font-face {
     font-family: 'bebas';
@@ -11,33 +22,91 @@
     font-style: normal;
 }
 
+* {
+	box-sizing: border-box;
+}
+
+.clearfix {
+  *zoom: 1;
+  &:after {
+    width: 100%;
+    content: '';
+    font-size: 0;
+    line-height: 0;
+    text-indent: -4000px;
+    clear: both;
+    display: block;
+  }
+}
+
 .page_container {
 	.hero {
-
-	}
-	.menu_container {
-		.menu_link {
-
+		margin: 0px auto;
+		// width: 100%;
+		// height: 919px;
+		// max-width: 1206;
+		// max-height: 919;
+		.hero_image {
+			margin: 0px auto;
+			display: block;
+			max-width: 1206px;
+			max-height: 100%;
 		}
 	}
+
+	.menu_container {
+		margin: -85px auto 0px auto;
+		max-width: 1206px;
+		height: 85px;
+		@include sans_light;
+		text-transform: uppercase;
+
+		.left_side {
+			float: left;
+			.menu_link {
+				margin-right: 65px;
+			}
+		}
+		.right_side {
+			float: right;
+			.menu_link {
+				margin-left: 65px;
+			}
+		}
+		.menu_link {
+			color: #5c80a4;
+			text-decoration: none;
+		}
+	}
+
 	.page_sections {
 		.page_section {
+			@include sans_regular;
 
 			.section_title {
 				font-size: 50px;
+				text-align: center;
+				padding-bottom: 60px;
+				width: 710px;
+				margin: 0px auto;
 			}
 
 		}
 		.about_section {
+			text-align: center;
+
 			.section_title {
 				color: #ef0dfd;
+				border-bottom: 1px solid #3399ff;
 			}
 			.about_into {
 				.about_intro_title {
-
+					font-size: 30px;
+					color: #2c3e50;
 				}
 				.about_intro_text {
-
+					color: #707070;
+					font-size: 20px;
 				}
 				.about_into_seperator {
 
@@ -45,7 +114,8 @@
 			}
 			.about_features {
 				.about_features_title {
-
+					font-size: 30px;
+					color: #2c3e50;
 				}
 				.feature {
 					.feature_title {
@@ -62,11 +132,16 @@
 		}
 		.skills_section {
 			background-color: #0172bd;
+			color: #fff;
+			height: 585px;
 			.section_title {
-				color: #fff;
+				padding-top: 85px;
+				border-bottom: 1px solid #fff;
 			}
 			.skills_container {
+
 				.skill {
+					float: left;
 					.skill_value {
 
 					}
@@ -79,20 +154,35 @@
 		.portfolio_section {
 			.section_title {
 				color: #0172bd;
-
+				padding-top: 70px;
+				border-bottom: 1px solid #0172bd;
 			}
 			.portfolio_tiles {
-				.portfolio_tile {
+				margin-top: 50px;
 
+				.portfolio_tile {
+					float: left;
+					width: 629px;
+					height: 483px;
+					max-width: 33%;
+
+					.portfolio_tile_image {
+
+					}
 				}
 			}
 		}
 		.contact_section {
-			.contact_tile {
+			background-color: #0172bd;
+			color: #fff;
+			text-align: center;
+			height: 345px;
 
+			.contact_tile {
+				font-size: 37px;
 			}
 			.contact_subtitle {
-
+				font-size: 19px;
 			}
 			.contact_form {
 				.contact_intput {
@@ -104,12 +194,20 @@
 			}
 		}
 		.team_section {
+			text-align: center;
+
 			.section_title {
 				color: #0172bd;
-
+				padding-top: 85px;
+				border-bottom: 1px solid #e515fb;
 			}
 			.team_text {
-
+				margin-top: 40px;
+				color: #707070;
+				font-family: Georgia, tahoma;
+				font-style: italic;
+				font-size: 20px;
+				font-weight: 300;
 			}
 			.team_profiles {
 				.profile {
@@ -127,6 +225,16 @@
 		}
 	}
 	.footer {
+		background-color: #0172bd;
+		height: 75px;
 
+		.footer_inner {
+			margin: 0 auto;
+			line-height: 75px;
+			color: #fff;
+			@include sans_light;
+			font-size: 15px;
+			width: 1200px;
+		}
 	}
 }

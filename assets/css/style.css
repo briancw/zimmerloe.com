@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @font-face {
   font-family: 'bebas';
   src: url('/assets/fonts/BEBAS-webfont.eot');
@@ -6,15 +7,118 @@
   font-weight: normal;
   font-style: normal; }
 
-.page_container .page_sections .page_section .section_title {
-  font-size: 50px; }
-.page_container .page_sections .about_section .section_title {
-  color: #ef0dfd; }
+* {
+  box-sizing: border-box; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:after {
+    width: 100%;
+    content: '';
+    font-size: 0;
+    line-height: 0;
+    text-indent: -4000px;
+    clear: both;
+    display: block; }
+
+.page_container .hero {
+  margin: 0px auto; }
+  .page_container .hero .hero_image {
+    margin: 0px auto;
+    display: block;
+    max-width: 1206px;
+    max-height: 100%; }
+.page_container .menu_container {
+  margin: -85px auto 0px auto;
+  max-width: 1206px;
+  height: 85px;
+  font-family: "Open Sans", arial, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase; }
+  .page_container .menu_container .left_side {
+    float: left; }
+    .page_container .menu_container .left_side .menu_link {
+      margin-right: 65px; }
+  .page_container .menu_container .right_side {
+    float: right; }
+    .page_container .menu_container .right_side .menu_link {
+      margin-left: 65px; }
+  .page_container .menu_container .menu_link {
+    color: #5c80a4;
+    text-decoration: none; }
+.page_container .page_sections .page_section {
+  font-family: "Open Sans", arial, sans-serif;
+  font-weight: 400; }
+  .page_container .page_sections .page_section .section_title {
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 60px;
+    width: 710px;
+    margin: 0px auto; }
+.page_container .page_sections .about_section {
+  text-align: center; }
+  .page_container .page_sections .about_section .section_title {
+    color: #ef0dfd;
+    border-bottom: 1px solid #3399ff; }
+  .page_container .page_sections .about_section .about_into .about_intro_title {
+    font-size: 30px;
+    color: #2c3e50; }
+  .page_container .page_sections .about_section .about_into .about_intro_text {
+    color: #707070;
+    font-size: 20px; }
+  .page_container .page_sections .about_section .about_features .about_features_title {
+    font-size: 30px;
+    color: #2c3e50; }
 .page_container .page_sections .skills_section {
-  background-color: #0172bd; }
+  background-color: #0172bd;
+  color: #fff;
+  height: 585px; }
   .page_container .page_sections .skills_section .section_title {
-    color: #fff; }
+    padding-top: 85px;
+    border-bottom: 1px solid #fff; }
+  .page_container .page_sections .skills_section .skills_container .skill {
+    float: left; }
 .page_container .page_sections .portfolio_section .section_title {
-  color: #0172bd; }
-.page_container .page_sections .team_section .section_title {
-  color: #0172bd; }
+  color: #0172bd;
+  padding-top: 70px;
+  border-bottom: 1px solid #0172bd; }
+.page_container .page_sections .portfolio_section .portfolio_tiles {
+  margin-top: 50px; }
+  .page_container .page_sections .portfolio_section .portfolio_tiles .portfolio_tile {
+    float: left;
+    width: 629px;
+    height: 483px;
+    max-width: 33%; }
+.page_container .page_sections .contact_section {
+  background-color: #0172bd;
+  color: #fff;
+  text-align: center;
+  height: 345px; }
+  .page_container .page_sections .contact_section .contact_tile {
+    font-size: 37px; }
+  .page_container .page_sections .contact_section .contact_subtitle {
+    font-size: 19px; }
+.page_container .page_sections .team_section {
+  text-align: center; }
+  .page_container .page_sections .team_section .section_title {
+    color: #0172bd;
+    padding-top: 85px;
+    border-bottom: 1px solid #e515fb; }
+  .page_container .page_sections .team_section .team_text {
+    margin-top: 40px;
+    color: #707070;
+    font-family: Georgia, tahoma;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 300; }
+.page_container .footer {
+  background-color: #0172bd;
+  height: 75px; }
+  .page_container .footer .footer_inner {
+    margin: 0 auto;
+    line-height: 75px;
+    color: #fff;
+    font-family: "Open Sans", arial, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    width: 1200px; }

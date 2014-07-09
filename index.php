@@ -9,13 +9,20 @@
 <body>
 
 	<div class="page_container">
-		<div class="hero"></div>
+		<div class="hero">
+			<img class="hero_image" src="/assets/img/zimmerloe.png" alt="Zimmerloe" />
+		</div>
 
 		<div class="menu_container">
-			<a href="" class="menu_link">About</a>
-			<a href="" class="menu_link">Skills</a>
-			<a href="" class="menu_link">Portfolio</a>
-			<a href="" class="menu_link">Our Team</a>
+			<div class="left_side">
+				<a href="" class="menu_link">About</a>
+				<a href="" class="menu_link">Skills</a>
+			</div>
+			<div class="right_side">
+				<a href="" class="menu_link">Portfolio</a>
+				<a href="" class="menu_link">Our Team</a>
+			</div>
+			<div class="clearfix"></div>
 		</div>
 
 		<div class="page_sections">
@@ -87,9 +94,16 @@
 				<div class="section_title portfolio_title">Portfolio</div>
 
 				<div class="portfolio_tiles">
-					<div class="portfolio_tile"></div>
-					<div class="portfolio_tile"></div>
-					<div class="portfolio_tile"></div>
+					<div class="portfolio_tile_image">
+						<img src="http://placehold.it/629x483" alt="" class="portfolio_tile">
+					</div>
+					<div class="portfolio_tile_image">
+						<img src="http://placehold.it/629x483" alt="" class="portfolio_tile">
+					</div>
+					<div class="portfolio_tile_image">
+						<img src="http://placehold.it/629x483" alt="" class="portfolio_tile">
+					</div>
+					<div class="clearfix"></div>
 				</div>
 
 			</div>
@@ -131,7 +145,9 @@
 		</div>
 
 		<div class="footer">
-			&copy; 2014 | Zimmerloe Studio
+			<div class="footer_inner">
+				&copy; 2014 | Zimmerloe Studio
+			</div>
 		</div>
 
 	</div>
