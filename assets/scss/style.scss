@@ -11,31 +11,122 @@
     font-style: normal;
 }
 
-.page_title {
-	margin-top: 80px;
-	text-align: center;
-	.zimm {
-		font-family: 'Oleo Script';
-		font-size: 60px;
-	}
-	.eloe {
-		font-family: 'bebas';
-		font-size: 49px;
-	}
-}
+.page_container {
+	.hero {
 
-.page_title_2 {
-	margin-top: 80px;
-	letter-spacing: 1px;
-	text-align: center;
-	font-size: 60px;
-	font-family: 'Oleo Script';
-}
+	}
+	.menu_container {
+		.menu_link {
 
-.page_title_3 {
-	margin-top: 80px;
-	letter-spacing: 4px;
-	text-align: center;
-	font-size: 60px;
-	font-family: 'Bebas';
+		}
+	}
+	.page_sections {
+		.page_section {
+
+			.section_title {
+				font-size: 50px;
+			}
+
+		}
+		.about_section {
+			.section_title {
+				color: #ef0dfd;
+			}
+			.about_into {
+				.about_intro_title {
+
+				}
+				.about_intro_text {
+
+				}
+				.about_into_seperator {
+
+				}
+			}
+			.about_features {
+				.about_features_title {
+
+				}
+				.feature {
+					.feature_title {
+
+					}
+					.feature_text {
+
+					}
+				}
+			}
+			.about_contact_button {
+
+			}
+		}
+		.skills_section {
+			background-color: #0172bd;
+			.section_title {
+				color: #fff;
+			}
+			.skills_container {
+				.skill {
+					.skill_value {
+
+					}
+					.skill_title {
+
+					}
+				}
+			}
+		}
+		.portfolio_section {
+			.section_title {
+				color: #0172bd;
+
+			}
+			.portfolio_tiles {
+				.portfolio_tile {
+
+				}
+			}
+		}
+		.contact_section {
+			.contact_tile {
+
+			}
+			.contact_subtitle {
+
+			}
+			.contact_form {
+				.contact_intput {
+
+				}
+				.contact_submit {
+
+				}
+			}
+		}
+		.team_section {
+			.section_title {
+				color: #0172bd;
+
+			}
+			.team_text {
+
+			}
+			.team_profiles {
+				.profile {
+					.profile_image {
+
+					}
+					.profile_name {
+
+					}
+					.profile_title {
+
+					}
+				}
+			}
+		}
+	}
+	.footer {
+
+	}
 }
