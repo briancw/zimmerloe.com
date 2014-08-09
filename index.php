@@ -35,33 +35,44 @@
 					<div class="about_intro_text">
 						Zimmerloe Studio is a web development team that provides web design and web development services.
 					</div>
-					<div class="about_into_seperator">*****</div>
+					<div class="about_intro_seperator">*****</div>
 				</div>
 
 				<div class="about_features">
 					<div class="about_features_title">What We Do</div>
 
-					<div class="feature">
+					<div class="feature responsive_feature">
+						<div class="icon_overflow_container">
+							<div class="feature_icon responsive_feature"></div>
+						</div>
 						<div class="feature_title">Responsive Design</div>
 						<div class="feature_text">
 							We make simple and intuitive interfaces to provide your users with the best experience on any device.
 						</div>
 					</div>
-					<div class="feature">
+					<div class="feature development_feature">
+						<div class="icon_overflow_container">
+							<div class="feature_icon development_feature"></div>
+						</div>
 						<div class="feature_title">Web Development</div>
 						<div class="feature_text">
 							We create beautiful well coded websites.
 						</div>
 					</div>
-					<div class="feature">
+					<div class="feature marketing_feature">
+						<div class="icon_overflow_container">
+							<div class="feature_icon marketing_feature"></div>
+						</div>
 						<div class="feature_title">Marketing</div>
 						<div class="feature_text">
 							We provide the ability to track user engagement through a solid analytics platform.
 						</div>
 					</div>
+					<div class="clearfix"></div>
+
 				</div>
 
-				<a class="about_contact_button">Contact Us</a>
+				<a class="about_contact_button">CONTACT US</a>
 
 			</div>
 
@@ -76,7 +87,7 @@
 					</div>
 					<div class="skill">
 						<div class="skill_value">Amazing</div>
-						<div class="skill_title">Html5 & Css3</div>
+						<div class="skill_title">Html5 &amp; Css3</div>
 					</div>
 					<div class="skill">
 						<div class="skill_value">Amazing</div>
@@ -95,13 +106,13 @@
 
 				<div class="portfolio_tiles">
 					<div class="portfolio_tile_image">
-						<img src="http://placehold.it/629x483" alt="" class="portfolio_tile">
+						<img src="http://placehold.it/629x383" alt="" class="portfolio_tile">
 					</div>
 					<div class="portfolio_tile_image">
-						<img src="http://placehold.it/629x483" alt="" class="portfolio_tile">
+						<img src="/portfolio_images/mission_trip_mobile.jpg" alt="" class="portfolio_tile">
 					</div>
 					<div class="portfolio_tile_image">
-						<img src="http://placehold.it/629x483" alt="" class="portfolio_tile">
+						<img src="http://placehold.it/629x383" alt="" class="portfolio_tile">
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -115,7 +126,7 @@
 
 				<div class="contact_form">
 					<input type="text" class="contact_intput" placeholder="Enter Your Email" />
-					<input type="submit" class="contact_submit" />
+					<input type="submit" value="CONTACT" class="contact_submit" />
 				</div>
 
 			</div>
@@ -139,6 +150,7 @@
 						<div class="profile_name">Shawn Zimmerman</div>
 						<div class="profile_title">Designer</div>
 					</div>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 

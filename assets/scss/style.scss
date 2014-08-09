@@ -1,9 +1,19 @@
 @import url(http://fonts.googleapis.com/css?family=Oleo+Script);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
 @mixin sans_regular {
 	font-family: "Open Sans",arial,sans-serif;
 	font-weight: 400;
+}
+
+@mixin sans_light {
+	font-family: "Open Sans",arial,sans-serif;
+	font-weight: 300;
+}
+
+@mixin sans_semibold {
+	font-family: "Open Sans",arial,sans-serif;
+	font-weight: 600;
 }
 
 @mixin sans_light {
@@ -40,6 +50,8 @@
 }
 
 .page_container {
+	background-color: #fdfff8;
+
 	.hero {
 		margin: 0px auto;
 		// width: 100%;
@@ -101,33 +113,82 @@
 			}
 			.about_into {
 				.about_intro_title {
+					@include sans_light;
+					margin-top: 56px;
 					font-size: 30px;
 					color: #2c3e50;
 				}
-				.about_intro_text {
+				.about_intro_text, .about_intro_seperator {
+					margin-top: 10px;
+					font-family: 'Georgia';
+					font-style: italic;
+					font-weight: 300;
 					color: #707070;
 					font-size: 20px;
 				}
-				.about_into_seperator {
-
+				.about_intro_seperator {
+					margin-top: 20px;
 				}
 			}
 			.about_features {
 				.about_features_title {
+					@include sans_light;
+					margin-top: 35px;
 					font-size: 30px;
 					color: #2c3e50;
 				}
 				.feature {
-					.feature_title {
+					float: left;
+					width: 33.333%;
 
+					.icon_overflow_container {
+						height: 220px;
+
+						.feature_icon {
+							margin: 0 auto;
+
+							&.responsive_feature {
+								background: url('/assets/img/responsive.png') bottom center no-repeat;
+								width: 212px;
+								height: 233px;
+							}
+							&.development_feature {
+								background: url('/assets/img/development.png') bottom center no-repeat;
+								width: 393px;
+								height: 260px;
+								// height: 182px;
+							}
+							&.marketing_feature {
+								background: url('/assets/img/marketing.png') bottom center no-repeat;
+								width: 292px;
+								height: 260px;
+							}
+						}
+					}
+
+					.feature_title {
+						@include sans_semibold;
+						font-size: 20px;
+						color: #707070;
 					}
 					.feature_text {
-
+						@include sans_regular;
+						font-size: 15px;
+						color: #707070;
 					}
 				}
 			}
 			.about_contact_button {
-
+				@include sans_light;
+				background-color: #e515fb;
+				color: #fff;
+				width: 220px;
+				height: 46px;
+				line-height: 46px;
+				text-align: center;
+				display: block;
+				margin: 72px auto;
+				border-radius: 5px;
 			}
 		}
 		.skills_section {
@@ -152,6 +213,8 @@
 			}
 		}
 		.portfolio_section {
+			padding-bottom: 100px;
+
 			.section_title {
 				color: #0172bd;
 				padding-top: 70px;
@@ -162,7 +225,7 @@
 
 				.portfolio_tile {
 					float: left;
-					width: 629px;
+					// width: 629px;
 					height: 483px;
 					max-width: 33%;
 
@@ -177,22 +240,49 @@
 			color: #fff;
 			text-align: center;
 			height: 345px;
+			padding-top: 70px;
 
 			.contact_tile {
+				@include sans_light;
 				font-size: 37px;
 			}
 			.contact_subtitle {
+				@include sans_light;
 				font-size: 19px;
+				margin-top: 16px;
 			}
 			.contact_form {
 				.contact_intput {
-
+					@include sans_light;
+					width: 530px;
+					height: 57px;
+					line-height: 57px;
+					margin-top: 30px;
+					border-radius: 5px;
+					border: none;
+					float: left;
+					font-size: 23px;
+					padding-left: 20px;
 				}
 				.contact_submit {
-
+					@include sans_light;
+					background-color: #e515fb;
+					color: #fff;
+					width: 168px;
+					height: 57px;
+					line-height: 57px;
+					text-align: center;
+					display: block;
+					margin-top: 30px;
+					margin-left: 34px;
+					border-radius: 5px;
+					float: left;
+					border: none;
+					font-size: 23px;
 				}
 			}
 		}
+
 		.team_section {
 			text-align: center;
 
@@ -210,15 +300,23 @@
 				font-weight: 300;
 			}
 			.team_profiles {
+				margin-top: 65px;
+				padding-bottom: 180px;
 				.profile {
+					float: left;
+
 					.profile_image {
 
 					}
 					.profile_name {
+						@include sans_semibold;
+						color: #707070;
+						font-size: 20px;
 
 					}
 					.profile_title {
-
+						@include sans_regular;
+						color: #e515fb;
 					}
 				}
 			}
@@ -229,10 +327,10 @@
 		height: 75px;
 
 		.footer_inner {
+			@include sans_light;
 			margin: 0 auto;
 			line-height: 75px;
 			color: #fff;
-			@include sans_light;
 			font-size: 15px;
 			width: 1200px;
 		}
